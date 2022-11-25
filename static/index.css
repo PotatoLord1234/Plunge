@@ -1,79 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
-@import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+nav {
+  text-align: center;
+  color: rgb(45, 23, 143);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
 }
 
-* {
-  font-family: Roboto;
+/* unvisited link */
+a:link {
+  color: rgb(45, 23, 143);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(45, 23, 143);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(80, 201, 248);
+}
+
+/* selected link */
+a:active {
+  color: rgb(45, 23, 143);
 }
 
 body {
   margin: 0;
-  background: #111;
+  background: #9dd9fb;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  animation: fadeInAnimation ease-in-out 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
-.fa-magnifying-glass {
-  color: white;
-}
-
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10%;
-}
-
-.logo {
-  width: 150px;
-}
-
-.logo-wrapper .text {
-  font-size: 75px;
-  font-family: "Roboto";
-  color: #FFF;
-}
-
-.logo-wrapper h1 {
-  color: white;
-}
-
-footer {
-  margin-top: auto;
-  width: 93%;
-  align-self: center;
-  height: 80px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-footer a,
-footer span {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #FFF;
-  font-size: 15px;
-}
-
-footer a {
-  cursor: pointer;
-}
-
-footer a:hover {
-  text-decoration: underline;
+h1 {
+  text-align: center;
 }
 
 form {
@@ -81,35 +42,66 @@ form {
   justify-content: center;
 }
 
-.desc {
-  display: flex;
-  justify-content: center;
-}
-
-.desc p {
-  width: 560px;
-  color: rgba(253, 253, 253, 0.514);
-}
-
 form input {
   background: none;
-  font-family: inherit;
+  font-family: "Courier New", Courier, monospace;
   padding: 0px 17px;
   height: 48px;
-  border: 1px solid rgb(255, 255, 255, .2);
+  border: 3px solid rgba(34, 10, 168, 0.2);
   color: var(--text-color);
   border-radius: 3px;
   outline: none;
-  width: 350px;
+  width: 60%;
   margin-top: 5px;
-  border-radius: 50px;
-  color: #FFF;
+  border-radius: 10px;
+  color: rgb(45, 23, 143);
+  position: absolute;
+  top: 70%;
+  text-align: center;
 }
 
-form input:focus {
-  border: 1px solid rgba(253, 253, 253, 0.514);
-  border-radius: 6px;
-  animation: fadeInAnimation ease-in-out 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+#title {
+  color: rgb(45, 23, 143);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 45px;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  margin-left: 40%;
+  margin-right: 40%;
 }
+
+#discordlink {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+}
+
+#xlink {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+}
+
+/*BUTTON*/
+
+/*
+button{
+    font-size: 35px;
+    border: none;
+}
+
+#scroll{
+    background-color: white;
+    color: blue;
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    text-align: center;
+    border-radius: 50%;
+    display:block;
+    height: 50px;
+    width: 50px;
+}
+*/
