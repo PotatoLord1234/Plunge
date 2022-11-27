@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Plunge Proxy</title>
-    <link href="index.css" rel="stylesheet" />
-    <link
-      rel="icon"
-      href="https://cdn.discordapp.com/attachments/926540079491588186/1044744354113261578/P.png"
-    />
-  </head>
-  <nav>
-    <a href="/service/hvtrs8%2F-sktgs%2Cgmoelg.aoo%2Ftigw-tpirpnevhgpmtctmeq"
-      >Main Site</a
-    >
-  </nav>
-  <body>
-    <div id="title">
-      <h1>Plunge Proxy</h1>
-    </div>
 
-    <!--  <button id="scroll">^</button> 
-  <a href="https://plunge.potatolord5.repl.co/service/hvtrs8%2F-dksaopd%2Ccmm-ilvktg%2FHQoqfAVY%5BW" id="discordlink">
-<img src="https://clipartcraft.com/images/discord-logo-transparent-gray-3.png" alt="discord" height=
-"10%" width="10%">
-  </a>
-  <a href="https://plunge.potatolord5.repl.co/service/hvtrs8%2F-sktgs%2Cgmoelg.aoo%2Ftigw-tpirpnevhgpmtctmeq" id="xlink">
-    <img src="https://cdn.discordapp.com/attachments/926540079491588186/1044744821098696825/Potato-modified.png" alt="3xpotatoes" 
-    height="77%" width="77%">
-  </a>
-  -->
-    <form>
-      <input placeholder="Search the web freely" />
-    </form>
-    <footer></footer>
-    <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Plunge Proxy</title>
+    <link href="index.css" rel="stylesheet">  <link rel="icon" href="https://cdn.discordapp.com/attachments/926540079491588186/1044744354113261578/P.png">
+  
+</head>
+<nav>
+<p>Autofil Links:</p>
+<a id="mainSite">Main Site</a>
+<a id="games">Games</a>
+
+</nav>
+<body>
+<!-- This code is what autofills the input field  -->
+<script>
+/* Link to site */
+document.getElementById("mainSite").addEventListener("click", () =>{
+      document.getElementById("search").value += "sites.google.com/view/tripplethepotatoes";
+   });
+/* Games */
+document.getElementById("games").addEventListener("click", () =>{
+      document.getElementById("search").value += "https://bgs.pages.dev/g/shock";
+   });
+</script>
+<!-- This is the main content of the website -->
+  <div id="title">
+  <h1>Plunge Proxy</h1>
+  </div>
+
+  <form>
+      <input id="search" placeholder="Enjoy the Internet!" />
+  </form>
+<!-- bottom content on the page -->
+<footer>
+    Plunge Proxy was developed by the creator of 3XPOTATOES (PoatoLord) to deliver a simple to use and easy way to unrestrict browsers with spywear and over-restrictive content-filters. Special thanks to Sonny#2187 and Bigfoot#9033 for the games page.
+<br>
+<div id="footerAnchor">
+<a href="https://discord.gg/UdG8NtGV96">Discord Server</a>
+<a href="/updates.html">Update Log</a>
+</div>
+</footer>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
